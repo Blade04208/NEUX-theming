@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=NEUX
+Comment=Theme for AURES NEUX
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=NEUX
+MetacityTheme=NEUX
+IconTheme=NEUX
+CursorTheme=GoogleDot-Dark
+ButtonLayout=close:
+X-Ubuntu-UseOverlayScrollbars=true
