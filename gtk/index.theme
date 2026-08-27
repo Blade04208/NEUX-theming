@@ -8,6 +8,6 @@ Encoding=UTF-8
 GtkTheme=NEUX
 MetacityTheme=NEUX
 IconTheme=NEUX
-CursorTheme=GoogleDot-Dark
+CursorTheme=Adwaita
 ButtonLayout=close:
 X-Ubuntu-UseOverlayScrollbars=true
