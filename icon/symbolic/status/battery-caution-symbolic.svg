@@ -1,0 +1,16 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_2_131" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="0" width="10" height="16">
+<path d="M11.4561 0.799805C12.3033 1.3342 12.7998 1.77616 12.7998 3.72656V12.5332C12.7995 16 8.36719 16 8 16C7.6323 16 3.20054 15.9998 3.2002 12.5332V3.72656C3.2002 1.77696 3.69675 1.3342 4.54395 0.799805V1.85156C4.54395 2.65155 5.78725 3.67381 8 3.67383C10.2128 3.67383 11.4561 2.65156 11.4561 1.85156V0.799805ZM7.92578 0C8.90622 3.33028e-05 9.5094 0.452541 9.50977 0.900391V1.5C9.50977 1.94638 8.90732 2.38376 7.92578 2.38379C6.94578 2.38379 6.34277 1.9472 6.34277 1.5V0.900391C6.34314 0.452524 6.94608 0 7.92578 0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_2_131)">
+<rect width="16" height="16" fill="url(#paint0_linear_2_131)"/>
+<rect x="2.69214" y="11.7295" width="10.9508" height="12.0828" fill="#FF9C9C"/>
+<rect x="2.69214" y="11.7295" width="10.9508" height="12.0828" fill="black" fill-opacity="0.2" style="mix-blend-mode:darken"/>
+<ellipse cx="8.00006" cy="11.9869" rx="4.79999" ry="2.05061" fill="#FF9C9C"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2_131" x1="8" y1="0" x2="8" y2="16" gradientUnits="userSpaceOnUse">
+<stop offset="1" stop-color="#FF7878" stop-opacity="0.5"/>
+</linearGradient>
+</defs>
+</svg>

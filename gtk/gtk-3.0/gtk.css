@@ -96,3 +96,30 @@ box-shadow: 0px 0.9px 0px 0px rgba(255, 255, 255, 0.1);
 .maximize:hover image {
     background-image: radial-gradient(73.84% 80% at 50% 80%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), radial-gradient(at bottom center, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1) 50%);
 }
+
+.org-gnome-TextEditor .top-bar {
+background: url("file:///home/blade0/Downloads/grain.png"), linear-gradient(180deg, #927558, #816346);
+color: white;
+background-size: 425px;
+background-blend-mode: color-dodge, normal;
+box-shadow: 0px 2px 2px 0px rgba(227, 213, 193, 0.4) inset, 0px -1px 1px 0px rgba(227, 213, 193, 0.3) inset, 0px 2px 6px 1px rgba(44, 44, 44, 0.16);
+border-radius: 9px 9px 0px 0px;
+border-bottom: 1px solid rgb(0 0 0 / 0.2);
+}
+
+.org-gnome-TextEditor .top-bar button:not(.close) {
+background:  radial-gradient(64.67% 75% at 50% 25%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+background-blend-mode: overlay;
+border-radius: 8px;
+
+box-shadow: 0px 0.9px 0px 0px rgba(255, 255, 255, 0.37), 0px 0.9px 1.26px 0px rgba(0, 0, 0, 0.2) inset, inset 0px 0px 0px 1px rgb(0 0 0 / 0.2);
+}
+
+/*
+.org-gnome-TextEditor textview>.left {
+border-right: 1px solid rgba(175, 6, 6, 0.6);
+outline: 1px solid rgba(175, 6, 6, 0.6);
+outline-offset: 4px;
+margin-right: 5px;
+}
+*/
