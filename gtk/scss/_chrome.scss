@@ -7,12 +7,11 @@ $window-chrome: "window > dialog-host > widget > widget > toolbarview";
 
 @mixin split-window {
   @each $view in $split-views {
-    #{$view} toolbarview {
+    #{$view} .content-pane toolbarview {
       background: vars.$surface;
     }
 
     #{$view} toolbarview > .top-bar {
-      @include headerbar.surface;
       @include headerbar.hairline;
     }
 
