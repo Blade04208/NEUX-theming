@@ -1,0 +1,24 @@
+@mixin rules {
+  @keyframes scroll {
+    0% {
+      background-position: 0% 0px;
+    }
+    100% {
+      background-position: 0% 100px;
+    }
+  }
+
+  ptyxistab {
+    background-image: repeating-linear-gradient(
+      color-mix(in srgb, currentColor, rgba(0, 0, 0, 0.25) 95%),
+      color-mix(in srgb, currentColor, rgba(0, 0, 0, 0.5) 85%) 5px,
+      color-mix(in srgb, currentColor, rgba(0, 0, 0, 0.25) 95%) 10px
+    );
+    background-repeat: repeat;
+    background-size: 100% 150px;
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}

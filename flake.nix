@@ -25,13 +25,23 @@
 
             src = ./gtk;
 
-            dontBuild = true;
+            nativeBuildInputs = [ pkgs.dart-sass ];
+
+            buildPhase = ''
+              runHook preBuild
+
+              sass --style=expanded --no-source-map scss/gtk-3.0.scss gtk-3.0/gtk.css
+              sass --style=expanded --no-source-map scss/gtk-4.0.scss gtk-4.0/gtk.css
+
+              runHook postBuild
+            '';
 
             installPhase = ''
               runHook preInstall
 
               mkdir -p $out/share/themes
               cp -r . $out/share/themes/NEUX
+              find $out -name '*.scss' -delete
 
               runHook postInstall
             '';

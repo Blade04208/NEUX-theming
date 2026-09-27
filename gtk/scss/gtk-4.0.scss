@@ -1,0 +1,21 @@
+@use "chrome";
+@use "gtk4";
+@use "headerbar";
+@use "sidebar";
+@use "terminal";
+@use "window";
+@use "windowcontrols";
+
+@media (prefers-color-scheme: dark) {
+  @include window.rules;
+  @include chrome.split-window;
+  @include chrome.plain-window;
+  @include headerbar.divider;
+  @include sidebar.rules;
+  @include terminal.rules;
+}
+
+@include windowcontrols.rules;
+@include gtk4.always;
+
+@include chrome.debug;

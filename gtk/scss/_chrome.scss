@@ -1,0 +1,61 @@
+@use "headerbar";
+@use "vars";
+
+$split-views: ("navigation-split-view", "overlay-split-view");
+$window-chrome: "window > dialog-host > widget > widget > toolbarview";
+
+
+@mixin split-window {
+  @each $view in $split-views {
+    #{$view} toolbarview {
+      background: vars.$surface;
+    }
+
+    #{$view} toolbarview > .top-bar {
+      @include headerbar.surface;
+      @include headerbar.hairline;
+    }
+
+
+    #{$view} .content-pane toolbarview > .top-bar {
+      border-bottom: 1px solid vars.$subtle-hairline;
+    }
+  }
+}
+
+
+@mixin plain-window {
+  #{$window-chrome} {
+    background: vars.$surface;
+  }
+
+  #{$window-chrome} > .top-bar {
+    @include headerbar.surface;
+    @include headerbar.hairline;
+  }
+}
+
+
+@mixin debug {
+  @if vars.$debug-chrome {
+    @each $view in $split-views {
+      $colour: #00ffff;
+
+      @if $view == "navigation-split-view" {
+        $colour: #ff00ff;
+      }
+
+      #{$view} {
+        outline: 3px solid $colour;
+      }
+    }
+
+    #{$window-chrome} > .top-bar {
+      outline: 3px solid #00ff00;
+    }
+
+    sheet {
+      outline: 3px solid #0000ff;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+$debug-chrome: false;
+
+// surfaces
+$bg: #1f1f1f;
+$surface: #232323;
+$raised: #525252;
+
+// titlebar
+$titlebar-top: #343434;
+$titlebar-bottom: #2c2c2c;
+
+// hairlines and overlays
+$hairline: rgba(255, 255, 255, 0.15);
+$subtle-hairline: rgba(255, 255, 255, 0.08);
+$hover: rgba(255, 255, 255, 0.075);
+$hover-dim: rgba(255, 255, 255, 0.05);
+$selected: rgba(0, 0, 0, 0.32);
+$selected-dim: rgba(0, 0, 0, 0.096);
+$selected-border: #00000066;
+$selected-inset: #0000006e;
+$separator: rgba(0, 0, 0, 0.3);
+
+// accents
+$accent: #1b5eee;
+$destructive: #b20d10;
+$editor-top: #927558;
+$editor-bottom: #816346;
+
+$radius-window: 10px;
+$radius-row: 8px;
