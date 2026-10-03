@@ -26,8 +26,8 @@
   }
 
   .nautilus-file-chooser .bottom-bar {
-      border-top: 1px solid vars.$hairline;
-      box-shadow: 0px 1px inset rgba(0, 0, 0, 0.35);
+      border-top: 1px solid rgba(0, 0, 0, 0.35);
+      box-shadow: 0px 1px inset vars.$hairline;
       button.pill {
       min-height: 0px;
       padding: 7px 18px;
