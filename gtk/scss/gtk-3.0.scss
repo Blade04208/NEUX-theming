@@ -1,11 +1,9 @@
 @use "gtk3";
 @use "sidebar";
-@use "terminal";
 @use "window";
 @use "windowcontrols";
 
 @include window.rules;
 @include sidebar.rules;
-@include terminal.rules;
 @include windowcontrols.rules;
 @include gtk3.rules;

@@ -25,30 +25,13 @@
     border-radius: 6px;
   }
 
-  :not(menubutton):not(toggle-group) > .text-button:not(.flat),
-  .circular.image-button:not(.flat),
-  splitbutton:not(.flat),
-  spinbutton > .image-button,
-  .boxed-list row button:not(.flat),
-  .linked > .image-button {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(61, 61, 61, 0.64) 60%, rgba(0, 0, 0, 0.4096) 72%, rgba(0, 0, 0, 0) 100%), linear-gradient(181.95deg, rgba(0, 0, 0, 0) 1.63%, rgba(0, 0, 0, 0.16) 59.67%, rgba(0, 0, 0, 0.16) 71.72%, rgba(0, 0, 0, 0.16) 80.94%, rgba(0, 0, 0, 0) 98.35%), linear-gradient(180deg, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0) 85.6%, vars.$raised 100%), linear-gradient(0deg, #999999, #999999), vars.$raised;
-    background-blend-mode: soft-light, normal, color-dodge, overlay, normal;
-    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.16);
-    border: 1px solid white;
-    border-image-source: linear-gradient(180deg, rgba(0, 0, 0, 0) 52%, rgba(255, 255, 255, 1) 95.39%, rgba(255, 255, 255, 0) 100%);
-  }
-
-  :not(menubutton):not(toggle-group) > .text-button.suggested-action,
-  .circular.image-button.suggested-action {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(61, 61, 61, 0.64) 60%, rgba(0, 0, 0, 0.4096) 72%, rgba(0, 0, 0, 0) 100%), linear-gradient(181.95deg, rgba(0, 0, 0, 0) 1.63%, rgba(0, 0, 0, 0.16) 59.67%, rgba(0, 0, 0, 0.16) 71.72%, rgba(0, 0, 0, 0.16) 80.94%, rgba(0, 0, 0, 0) 98.35%), linear-gradient(180deg, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0) 85.6%, vars.$raised 100%), linear-gradient(0deg, #999999, #999999), vars.$accent;
-  }
-
-  :not(menubutton):not(toggle-group) > .text-button.destructive-action {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(61, 61, 61, 0.64) 60%, rgba(0, 0, 0, 0.4096) 72%, rgba(0, 0, 0, 0) 100%), linear-gradient(181.95deg, rgba(0, 0, 0, 0) 1.63%, rgba(0, 0, 0, 0.16) 59.67%, rgba(0, 0, 0, 0.16) 71.72%, rgba(0, 0, 0, 0.16) 80.94%, rgba(0, 0, 0, 0) 98.35%), linear-gradient(180deg, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0) 85.6%, vars.$raised 100%), linear-gradient(0deg, #999999, #999999), vars.$destructive;
-  }
-
-  :not(menubutton):not(toggle-group) > .text-button > label {
-    color: rgba(255, 255, 255, 0.9);
-    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.16), 0px 2px 3px rgba(0, 0, 0, 0.16);
+  .nautilus-file-chooser .bottom-bar {
+      border-top: 1px solid vars.$hairline;
+      box-shadow: 0px 1px inset rgba(0, 0, 0, 0.35);
+      button.pill {
+      min-height: 0px;
+      padding: 7px 18px;
+      border-radius: 10px;
+      }
   }
 }
