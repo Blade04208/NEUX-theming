@@ -1,19 +1,35 @@
 @use "vars";
 
 @mixin rules {
-  .navigation-sidebar row {
-    border-radius: vars.$radius-row;
-  }
+    .navigation-sidebar row {
+        border-radius: vars.$radius-row;
+        line-height: 0;
+        margin: 2px 5px;
+        min-height: 28px;
 
-  .navigation-sidebar row:hover {
-    background-image: linear-gradient(to bottom, vars.$hover, vars.$hover-dim);
-  }
+        &:hover {
+            background-image: linear-gradient(to bottom, vars.$hover, vars.$hover-dim);
+        }
 
-  .navigation-sidebar row:selected {
-    background-color: transparent;
-    background-image: linear-gradient(to bottom, vars.$selected, vars.$selected-dim);
-    border: 1px solid vars.$selected-border;
-    box-shadow: 0px 1px 1.1px 0.9px vars.$selected-inset inset;
-    box-shadow: 0px 0.9px 0px 0px rgba(255, 255, 255, 0.1);
-  }
+        &:selected {
+            background-color: transparent;
+            background-image: linear-gradient(to bottom, vars.$selected, vars.$selected-dim);
+            border: 1px solid vars.$selected-border;
+            box-shadow: 0px 1px 1.1px 0.9px vars.$selected-inset inset;
+            box-shadow: 0px 0.9px 0px 0px rgba(255, 255, 255, 0.1);
+            font-weight: 600;
+        }
+
+        image {
+            transform: scale(0.9);
+        }
+
+        revealer {
+            padding: 0px 10px;
+        }
+    }
+
+    .sidebar-pane>toolbarview {
+        border-right: 1px solid black;
+    }
 }

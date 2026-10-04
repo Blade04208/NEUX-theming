@@ -1,30 +1,30 @@
 @use "vars";
 
 @mixin rules {
-  window:not(.ptyxis-window) {
-    background-color: rgba(25, 25, 25, 0.8);
-  }
+    window:not(.ptyxis-window) {
+        background-color: rgba(25, 25, 25, 0.8);
+    }
 
-  .icon-listbox,
-  notebook > stack {
-    background: vars.$surface;
-  }
+    .icon-listbox,
+    notebook>stack {
+        background: vars.$surface;
+    }
 
-  sheet {
-    border: 1px solid black;
-    background-color: vars.$bg;
-  }
+    sheet {
+        border: 1px solid black;
+        background-color: vars.$bg;
+    }
 
-  .content-pane {
-    background-color: vars.$bg;
-  }
+    .content-pane {
+        background-color: vars.$bg;
+    }
 
-  .sidebar-pane,
-  .sidebar {
-    background-color: transparent;
-  }
+    .sidebar-pane,
+    .sidebar {
+        background-color: transparent;
+    }
 
-  popover > * {
-    background-color: vars.$bg;
-  }
+    popover>* {
+        background-color: vars.$bg;
+    }
 }

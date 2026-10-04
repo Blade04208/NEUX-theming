@@ -3,35 +3,36 @@
 
 
 @mixin always {
-  popover > * {
-    background: color-mix(in oklab, vars.$surface, white 5%);
-    border: 1px solid black;
-    box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
-  }
+    popover>* {
+        background: color-mix(in oklab, vars.$surface, white 5%);
+        border: 1px solid black;
+        box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
+    }
 
-  popover > contents {
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 5px 1px rgba(0, 0, 0, 0.09), 0 2px 14px 3px rgba(0, 0, 0, 0.05), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
-  }
+    popover>contents {
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 5px 1px rgba(0, 0, 0, 0.09), 0 2px 14px 3px rgba(0, 0, 0, 0.05), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
+    }
 
-  .org-gnome-TextEditor .top-bar {
-    background: linear-gradient(180deg, vars.$editor-top 1.28%, vars.$editor-bottom 6.96%), linear-gradient(180deg, rgba(0, 0, 0, 0.47) -3.54%, rgba(153, 153, 153, 0.47) -2.18%, rgba(217, 217, 217, 0.47) 1.55%, rgba(166, 166, 166, 0.47) 3.46%, rgba(153, 153, 153, 0.47) 5.56%, rgba(232, 232, 232, 0.47) 8.14%);
-    box-shadow: inset 0px -6px 4px -2px rgba(255, 255, 255, 0.25), inset 0px -4px 4px -2px darker(vars.$editor-top), 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
-    color: white;
-  }
+    .org-gnome-TextEditor .top-bar {
+        background: linear-gradient(180deg, vars.$editor-top 1.28%, vars.$editor-bottom 6.96%), linear-gradient(180deg, rgba(0, 0, 0, 0.47) -3.54%, rgba(153, 153, 153, 0.47) -2.18%, rgba(217, 217, 217, 0.47) 1.55%, rgba(166, 166, 166, 0.47) 3.46%, rgba(153, 153, 153, 0.47) 5.56%, rgba(232, 232, 232, 0.47) 8.14%);
+        box-shadow: inset 0px -6px 4px -2px rgba(255, 255, 255, 0.25), inset 0px -4px 4px -2px darker(vars.$editor-top), 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+        color: white;
+    }
 
-  .org-gnome-TextEditor .top-bar .image-button:not(.close):not(.minimize):not(.maximize),
-  .org-gnome-TextEditor .top-bar .toggle {
-    background: radial-gradient(64.67% 75% at 50% 25%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.0881821) -38.89%, rgba(0, 0, 0, 0.064) -11.38%, rgba(0, 0, 0, 0.119727) 14.82%, rgba(0, 0, 0, 0.2) 50.46%, rgba(0, 0, 0, 0.2) 68.72%, rgba(0, 0, 0, 0.14) 95.35%);
-    border-radius: 6px;
-  }
+    .org-gnome-TextEditor .top-bar .image-button:not(.close):not(.minimize):not(.maximize),
+    .org-gnome-TextEditor .top-bar .toggle {
+        background: radial-gradient(64.67% 75% at 50% 25%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.0881821) -38.89%, rgba(0, 0, 0, 0.064) -11.38%, rgba(0, 0, 0, 0.119727) 14.82%, rgba(0, 0, 0, 0.2) 50.46%, rgba(0, 0, 0, 0.2) 68.72%, rgba(0, 0, 0, 0.14) 95.35%);
+        border-radius: 6px;
+    }
 
-  .nautilus-file-chooser .bottom-bar {
-      border-top: 1px solid rgba(0, 0, 0, 0.35);
-      box-shadow: 0px 1px inset vars.$hairline;
-      button.pill {
-      min-height: 0px;
-      padding: 7px 18px;
-      border-radius: 10px;
-      }
-  }
+    .nautilus-file-chooser .bottom-bar {
+        border-top: 1px solid rgba(0, 0, 0, 0.35);
+        box-shadow: 0px 1px inset vars.$hairline;
+
+        button.pill {
+            min-height: 0px;
+            padding: 7px 18px;
+            border-radius: 10px;
+        }
+    }
 }

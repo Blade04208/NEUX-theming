@@ -1,34 +1,41 @@
 @use "headerbar";
 @use "vars";
 
-$split-views: ("navigation-split-view", "overlay-split-view");
+$split-views: (
+    "navigation-split-view",
+    "overlay-split-view"
+);
 $window-chrome: "window > dialog-host > widget > widget > toolbarview";
 
 
 @mixin split-window {
-  @each $view in $split-views {
-    #{$view} .content-pane toolbarview {
-      background: vars.$surface;
-    }
+    @each $view in $split-views {
+        #{$view} .content-pane toolbarview {
+            background: vars.$surface;
 
-    #{$view} toolbarview > .top-bar {
-      @include headerbar.hairline;
-    }
+            .top-bar {
+                border-bottom: 1px solid vars.$subtle-hairline;
+                margin-top: -1px;
 
+                >* {
+                    margin-bottom: -1px;
+                }
+            }
+        }
 
-    #{$view} .content-pane toolbarview > .top-bar {
-      border-bottom: 1px solid vars.$subtle-hairline;
+        #{$view} toolbarview>.top-bar {
+            @include headerbar.hairline;
+        }
     }
-  }
 }
 
 
 @mixin plain-window {
-  #{$window-chrome} {
-    background: vars.$surface;
-  }
+    #{$window-chrome} {
+        background: vars.$surface;
+    }
 
-  #{$window-chrome} > .top-bar {
-    @include headerbar.surface;
-  }
+    #{$window-chrome}>.top-bar {
+        @include headerbar.surface;
+    }
 }

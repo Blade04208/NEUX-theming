@@ -2,14 +2,15 @@
 
 
 @mixin rules {
-  .background .top-bar,
-  headerbar {
-    @include headerbar.surface;
-  }
 
-  .top-bar {
-    @include headerbar.hairline;
-  }
+    .background .top-bar,
+    headerbar {
+        @include headerbar.surface;
+    }
 
-  @include headerbar.divider;
+    .top-bar {
+        @include headerbar.hairline;
+    }
+
+    @include headerbar.divider;
 }
